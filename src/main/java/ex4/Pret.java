@@ -20,7 +20,7 @@ public class Pret {
 	}
 	
 	public Pret(double capital, double taux, Date dateDebut, Date dateFin) {
-		super();
+		this(capital, taux, dateDebut);
 		this.strategy = new PretATerme();
 		this.capital = capital;
 		this.taux = taux;
@@ -29,7 +29,7 @@ public class Pret {
 	}
 	
 	public Pret(double capital, double capitalRestantDu, double taux, Date dateDebut, Date dateFin) {
-		super();
+		this(capitalRestantDu, taux, dateDebut, dateFin);
 		this.strategy = new PretATerme();
 		this.capital = capital;
 		this.capitalRestantDu = capitalRestantDu;
